@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery Window Events</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+        #box{
+            width: 70%;
+            height: 200px;
+            background: pink;
+            padding: 10px;
+            border: 1px solid #000;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery Window events</h1>
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+        culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+        culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim, culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+        culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+        culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, et dignissimos. Aspernatur doloremque libero eveniet
+        quibusdam debitis quaerat? Aut saepe cupiditate sed vitae a, voluptatum adipisci ipsa vero recusandae doloribusLorem
+        ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+        culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+        culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+        culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+        culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, et dignissimos. Aspernatur doloremque libero eveniet
+        quibusdam debitis quaerat? Aut saepe cupiditate sed vitae a, voluptatum adipisci ipsa vero recusandae doloribusLorem
+        ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+        culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+        culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+        culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+        culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?!</p>
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, et dignissimos. Aspernatur doloremque libero eveniet quibusdam debitis quaerat? Aut saepe cupiditate sed vitae a, voluptatum adipisci ipsa vero recusandae doloribusLorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+    culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+    culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+    culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+    culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?!
+
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, et dignissimos. Aspernatur doloremque libero eveniet
+    quibusdam debitis quaerat? Aut saepe cupiditate sed vitae a, voluptatum adipisci ipsa vero recusandae doloribusLorem
+    ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+    culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+    culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+    culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+    culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, et dignissimos. Aspernatur doloremque libero eveniet
+    quibusdam debitis quaerat? Aut saepe cupiditate sed vitae a, voluptatum adipisci ipsa vero recusandae doloribusLorem
+    ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+    culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+    culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+    culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+    culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, et dignissimos. Aspernatur doloremque libero eveniet
+    quibusdam debitis quaerat? Aut saepe cupiditate sed vitae a, voluptatum adipisci ipsa vero recusandae doloribusLorem
+    ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+    culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+    culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+    culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?Lorem ipsum dolor sit amet
+    consectetur adipisicing elit. Consequatur voluptatem, sequi quo labore hic eum est enim,
+    culpa asperiores quae provident illum iure vel sint modi rerum expedita corporis aliquam?!
+
+</p>
+        <script src="jquery_js_file/jquery.js"></script>
+        <script src="jquery_js_file/window_events.js"></script>
+</body>
+</html>

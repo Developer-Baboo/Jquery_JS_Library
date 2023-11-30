@@ -32,7 +32,7 @@
         $(document).ready(function () {
             console.log("Jquery is ready");
             console.log("Jquery Keyboard Events");
-
+            //keypress and keydown work almost same
             $('body').keypress(function(){
                 $(this).css('background-color','orange');
             });
@@ -41,7 +41,8 @@
                 $(this).css('background-color','orange');
             });
 
-            $('body').keypress(function(){
+            //jb key ko up kraga
+            $('body').keyup(function(){
                 $(this).css('background-color','green');
             });
         });

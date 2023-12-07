@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <ul>
+            <li class="list active" data-filter="all" >All</li>
+            <li class="list" data-filter="mobile" >Mobile</li>
+            <li class="list" data-filter="camera" >Camera</li>
+            <li class="list" data-filter="watch" >Watch</li>
+            <li class="list" data-filter="shoe" >shoe</li>
+            <li class="list" data-filter="headphone" >Headphone</li>
+            
+        </ul>
+        <div class="product" >
+            <div class="itemBox mobile"><img src="images/mobile1.jpg" alt=""></div>
+            <div class="itemBox camera"><img src="images/camera1.jpg" alt=""></div>
+            <div class="itemBox watch"><img src="images/watch1.jpg" alt=""></div>
+            <div class="itemBox shoe"><img src="images/shoe1.jpg" alt=""></div>
+            <div class="itemBox headphone"><img src="images/headphone1.jpg" alt=""></div>
+            <div class="itemBox mobile"><img src="images/mobile2.jpg" alt=""></div>
+            <div class="itemBox camera"><img src="images/camera2.jpg" alt=""></div>
+            <div class="itemBox watch"><img src="images/watch2.jpg" alt=""></div>
+            <div class="itemBox shoe"><img src="images/shoe2.jpg" alt=""></div>
+            <div class="itemBox headphone"><img src="images/headphone2.jpg" alt=""></div>
+            <div class="itemBox mobile"><img src="images/mobile3.jpg" alt=""></div>
+            <div class="itemBox camera"><img src="images/camera3.jpg" alt=""></div>
+            <div class="itemBox watch"><img src="images/watch3.jpg" alt=""></div>
+            <div class="itemBox shoe"><img src="images/shoe3.jpg" alt=""></div>
+            <div class="itemBox headphone"><img src="images/headphone3.jpg" alt=""></div>
+            <div class="itemBox mobile"><img src="images/mobile4.jpg" alt=""></div>
+            <div class="itemBox watch"><img src="images/watch4.jpg" alt=""></div>
+            <div class="itemBox shoe"><img src="images/shoe4.jpg" alt=""></div>
+            <div class="itemBox headphone"><img src="images/headphone4.jpg" alt=""></div>
+            <div class="itemBox mobile"><img src="images/mobile5.jpg" alt=""></div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" >
+        // This function runs when the document is ready
+        $(document).ready(function () {
+                // When an element with the class 'list' is clicked
+                $('.list').click(function () {
+                    // Get the value of the 'data-filter' attribute of the clicked element
+                    const value = $(this).attr('data-filter');
+
+                    // If the value is 'all', show all elements with the class 'itemBox'
+                    if (value == 'all') {
+                        $('.itemBox').show('1000');
+                    } else {
+                        // Hide elements with the class 'itemBox' that do not have the specified value
+                        $('.itemBox').not('.' + value).hide('1000');
+
+                        // Show elements with the class 'itemBox' that have the specified value
+                        $('.itemBox').filter('.' + value).show('1000');
+
+                        // Alternatively, you can achieve the same result with the following line
+                        // $('.itemBox').hide('1000');
+                    }
+                });
+
+                // When an element with the class 'list' is clicked, add the class 'active' to it
+                // and remove the 'active' class from its siblings
+                $('.list').click(function () {
+                    $(this).addClass('active').siblings().removeClass('active');
+                });
+            });
+    </script>
+</body>
+</html>
